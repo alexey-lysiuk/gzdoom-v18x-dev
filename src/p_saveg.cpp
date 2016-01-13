@@ -401,9 +401,6 @@ void P_SerializeWorld (FArchive &arc)
 				<< desaturate;
 			sec->ColorMap = GetSpecialLights (color, fade, desaturate);
 		}
-		// begin of GZDoom additions
-		arc << sec->reflect[sector_t::ceiling] << sec->reflect[sector_t::floor];
-		// end of GZDoom additions
 	}
 
 	// do lines

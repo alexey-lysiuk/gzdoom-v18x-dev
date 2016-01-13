@@ -1098,14 +1098,6 @@ public:
 	}
 
 	bool HasSpecialDeathStates () const;
-
-	// begin of GZDoom specific additions
-	TArray<TObjPtr<AActor> >		dynamiclights;
-	void *				lightassociations;
-	bool				hasmodel;
-	// end of GZDoom specific additions
-
-	size_t PropagateMark();
 };
 
 class FActorIterator
